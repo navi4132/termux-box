@@ -24,6 +24,7 @@ sudo mount --bind /proc $folder/proc
 sudo mount --bind /dev/pts $folder/dev/pts
 sudo mount --bind /data/data/com.termux/files/usr/tmp $folder/tmp
 sudo mount --bind /storage/emulated/0/ $folder/sdcard
+sudo mount --bind /storage/75AA-BCF6/ $folder/ubuntu/sdcard1
 sudo mount --bind /sdcard/Android/data/com.termux/files $folder/termux
 
 export SECONDARY_STORAGE="$(ls /storage | grep -v '^self$' | grep -v '^emulated$')"
