@@ -25,7 +25,7 @@ sudo mount --bind /dev/pts $folder/dev/pts
 sudo mount --bind /data/data/com.termux/files/usr/tmp $folder/tmp
 sudo mount --bind /storage/emulated/0/ $folder/sdcard
 sudo mount --bind /sdcard/Android/data/com.termux/files $folder/termux
-
+sudo mount --bind /storage/75AA-BCF6/ $HOME/ubuntu/sdcard1
 export SECONDARY_STORAGE="$(ls /storage | grep -v '^self$' | grep -v '^emulated$')"
 if [ "$SECONDARY_STORAGE" != "" ]; then
     sudo mount --bind /storage/$SECONDARY_STORAGE $folder/external
